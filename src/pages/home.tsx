@@ -9,7 +9,8 @@ interface HomePageProps {
 
 const HomePage: React.FC<HomePageProps> = memo(({ isDarkMode }) => {
   return (
-    <motion.div
+    <motion.div  
+      style={{ willChange: "auto" }}
       className="h-full flex flex-col justify-start font-['Geist']"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -19,6 +20,7 @@ const HomePage: React.FC<HomePageProps> = memo(({ isDarkMode }) => {
         {/* Name and Bio */}
         <div>
           <motion.div
+            style={{ willChange: "auto" }}
             className="flex flex-row sm:flex-row justify-between items-center gap-4 mb-6"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -33,6 +35,7 @@ const HomePage: React.FC<HomePageProps> = memo(({ isDarkMode }) => {
             </h1>
 
             <motion.div
+              style={{ willChange: "auto" }}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               whileHover={{ 
@@ -52,6 +55,7 @@ const HomePage: React.FC<HomePageProps> = memo(({ isDarkMode }) => {
             </motion.div>
           </motion.div>
           <motion.div
+            style={{ willChange: "auto" }}
             className="mb-3 text-left"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -79,6 +83,7 @@ const HomePage: React.FC<HomePageProps> = memo(({ isDarkMode }) => {
           </motion.div>
 
           <motion.p
+            style={{ willChange: "auto" }}
             className={`text-base leading-relaxed mb-4 font-light ${
               isDarkMode ? "text-gray-200" : "text-stone-800"
             }`}
@@ -105,6 +110,7 @@ const HomePage: React.FC<HomePageProps> = memo(({ isDarkMode }) => {
           </motion.p>
 
           <motion.p
+            style={{ willChange: "auto" }}
             className={`text-sm font-light mb-4 leading-relaxed ${
               isDarkMode ? "text-gray-300" : "text-stone-700"
             }`}
@@ -119,6 +125,7 @@ const HomePage: React.FC<HomePageProps> = memo(({ isDarkMode }) => {
           </motion.p>
 
           <motion.div
+            style={{ willChange: "auto" }}
             className={`text-xs font-light flex items-center gap-2 ${
               isDarkMode ? "text-gray-400" : "text-stone-600"
             }`}

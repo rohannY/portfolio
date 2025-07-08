@@ -48,7 +48,7 @@ const CompanyDetails: React.FC<CompanyDetailsProps> = ({ company, isDarkMode, on
             className={`px-3 py-1.5 text-sm rounded ${
               isDarkMode 
                 ? "bg-zinc-800 text-white hover:bg-zinc-700" 
-                : "bg-amber-800 text-white hover:bg-amber-700"
+                : "bg-emerald-700 text-white hover:bg-emerald-600"
             } transition-colors`}
           >
             Go Back
@@ -77,7 +77,7 @@ const CompanyDetails: React.FC<CompanyDetailsProps> = ({ company, isDarkMode, on
           className={`p-1.5 rounded transition-colors ${
             isDarkMode 
               ? "text-zinc-400 hover:text-white hover:bg-zinc-800" 
-              : "text-amber-700 hover:text-amber-900 hover:bg-amber-100"
+              : "text-emerald-700 hover:text-emerald-900 hover:bg-emerald-100"
           }`}
         >
           <ArrowLeft className="w-4 h-4" />

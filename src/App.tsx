@@ -52,6 +52,7 @@ function AppContent() {
         <Routes>
           <Route path="/" element={
             <motion.div
+              style={{ willChange: "auto" }}
               key="home"
               initial={{ opacity: 0, x: 8 }}
               animate={{ opacity: 1, x: 0 }}
@@ -64,6 +65,7 @@ function AppContent() {
           } />
           <Route path="/work-experience" element={
             <motion.div
+              style={{ willChange: "auto" }}
               key="work-experience"
               initial={{ opacity: 0, x: 8 }}
               animate={{ opacity: 1, x: 0 }}

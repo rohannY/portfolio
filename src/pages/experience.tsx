@@ -67,7 +67,7 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({ isDarkMode }) => {
               <span className={`pt-2 ${isDarkMode ? "text-zinc-100" : "text-gray-700"}`}>{exp.role}</span>
                               <button
                   onClick={() => handleCompanyClick(exp.company)}
-                  className={`flex items-center px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl text-sm sm:text-base font-medium shadow-sm transition-all duration-200 cursor-pointer hover:scale-105 ${isDarkMode ? 'bg-zinc-700 text-zinc-100' : 'bg-amber-800/10 text-white border border-amber-800/20'}`}
+                  className={`flex items-center px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl text-sm sm:text-base font-medium shadow-sm transition-all duration-200 cursor-pointer hover:scale-105 ${isDarkMode ? 'bg-zinc-700 text-zinc-100' : 'bg-indigo-800/10 text-white border border-indigo-800/20'}`}
                   style={{ cursor: 'pointer' }}
                 >
                   <span className="w-6 h-6 mr-2 flex items-center justify-center">{exp.logo}</span>
